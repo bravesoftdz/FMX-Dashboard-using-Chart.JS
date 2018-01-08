@@ -1,0 +1,66 @@
+object fmmain: Tfmmain
+  Left = 0
+  Top = 0
+  Caption = 'ChartJS Dashboard Design'
+  ClientHeight = 317
+  ClientWidth = 334
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object ToolBar1: TToolBar
+    Size.Width = 334.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object btndatachg: TButton
+      Align = Scale
+      Size.Width = 169.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Data Change'
+      OnClick = btndatachgClick
+    end
+    object btnoriginal: TButton
+      Align = Scale
+      Position.X = 168.000000000000000000
+      Size.Width = 166.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Original'
+      OnClick = btnoriginalClick
+    end
+  end
+  object WebBrowser1: TWebBrowser
+    Align = Client
+    Size.Width = 334.000000000000000000
+    Size.Height = 252.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label1: TLabel
+    Align = Top
+    Position.Y = 48.000000000000000000
+    Size.Width = 334.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Uses a HTML form with bootstrap 3 css and Javascript libraries'
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 200
+    OnTimer = Timer1Timer
+    Left = 288
+    Top = 73
+  end
+  object Timer2: TTimer
+    Enabled = False
+    Interval = 200
+    OnTimer = Timer2Timer
+    Left = 288
+    Top = 137
+  end
+end
